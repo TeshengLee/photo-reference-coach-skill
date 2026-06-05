@@ -25,6 +25,54 @@ The skill lives in:
 photo-reference-coach/
 ```
 
+## Install
+
+### Option 1: Ask Codex to install it
+
+In Codex, ask:
+
+```text
+Use $skill-installer to install https://github.com/TeshengLee/photo-reference-coach-skill/tree/main/photo-reference-coach
+```
+
+Restart Codex after installation so the new skill is picked up.
+
+### Option 2: Install with the skill installer script
+
+If you have the OpenAI skill installer available locally, run:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo TeshengLee/photo-reference-coach-skill \
+  --path photo-reference-coach
+```
+
+Restart Codex after installation.
+
+### Option 3: Manual install
+
+Clone or download this repository, then copy the `photo-reference-coach/` folder into your Codex skills directory:
+
+```text
+~/.codex/skills/photo-reference-coach/
+```
+
+If your Codex setup uses a different skills directory, copy it there instead. Restart Codex after copying.
+
+## Usage
+
+Invoke the skill explicitly with:
+
+```text
+$photo-reference-coach
+```
+
+For example:
+
+```text
+$photo-reference-coach Analyze this photo: composition, light, color, editing, and how to shoot a similar image.
+```
+
 ## Typical Prompts
 
 English:
