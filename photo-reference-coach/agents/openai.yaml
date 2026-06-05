@@ -1,0 +1,7 @@
+interface:
+  display_name: "摄影样片解析与复现教练"
+  short_description: "从构图光线调色到现场复现，系统拆解照片样片"
+  default_prompt: "Use $photo-reference-coach to analyze a reference photo and explain composition, light, color, editing, and how to shoot a similar sample."
+
+policy:
+  allow_implicit_invocation: true
