@@ -144,6 +144,8 @@ $photo-reference-coach 参考图是第一张，我拍的是第二张，告诉我
 - Lightroom / Camera Raw editing direction
 - Practical shoot-like-this plans for similar scenes
 - Reference matching against the user's own image
+- Concrete shooting starting values for camera and phone users
+- Lightroom / Camera Raw parameter tables with ranges and adjustment logic
 
 ## License
 
