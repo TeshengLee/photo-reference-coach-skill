@@ -73,6 +73,12 @@ For example:
 $photo-reference-coach Analyze this photo: composition, light, color, editing, and how to shoot a similar image.
 ```
 
+## Language and Token Use
+
+This is one multilingual skill, not eight separate installed skills. The skill responds in the language used by the user prompt; it does not auto-select based on the computer's system language.
+
+The core `SKILL.md` is intentionally compact. The style reference material lives in `photo-reference-coach/references/style-library.md` and is only meant to be loaded when style diagnosis or no-sample improvement needs it.
+
 ## Typical Prompts
 
 English:
