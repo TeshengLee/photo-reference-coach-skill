@@ -30,6 +30,14 @@ If the route is ambiguous, infer the safest route from the user's wording. Ask o
 
 ## Metadata and Location
 
+When a local image file is available, metadata preflight is mandatory and must happen before visual analysis:
+
+```bash
+python3 scripts/extract_image_metadata.py <image-path>
+```
+
+Read the JSON result. Report whether metadata is present, partial, or stripped. Do not silently skip this step. If the script cannot read the format, use another available metadata tool or state the limitation.
+
 Start with a compact metadata status when metadata may matter:
 
 ```markdown
@@ -46,6 +54,8 @@ Start with a compact metadata status when metadata may matter:
 Use GPS/location only for the user's requested photo advice. Do not expose precise private addresses unless the user explicitly asks.
 
 For screenshots or social-media images, say metadata is unavailable and continue with visual analysis. Do not guess exact iPhone/camera models from appearance alone.
+
+When device type is known or strongly indicated, read `references/device-workflows.md` before giving shooting or editing advice. Use separate phone and interchangeable-lens camera workflows.
 
 ## Style Reference Library
 
@@ -92,6 +102,8 @@ Use known device/EXIF/GPS to make advice specific:
 - iPhone/phone: 0.5x/1x/2x/3x, ProRAW/RAW, exposure lock, focus lock, grid, portrait mode, night mode, tripod/self-timer.
 - Camera: focal length, aperture, shutter, ISO, stabilization, RAW/JPEG, white balance, exposure compensation.
 - Location: light direction, time window, crowd/space constraints, likely vantage points, weather dependence.
+
+If GPS is available and the user wants location-aware advice, identify only the useful area/landmark level by default. Browse current weather, sun direction/times, access rules, or crowd conditions when these affect the recommendation.
 
 ### Pre-Shoot Plan
 
