@@ -21,9 +21,9 @@
 ### Task 2: Skill Rules
 
 **Files:**
-- Modify: `photo-reference-coach/SKILL.md`
-- Create: `photo-reference-coach/references/editing-tools.md`
-- Modify: `photo-reference-coach/scripts/extract_image_metadata.py`
+- Modify: `photography-coach/SKILL.md`
+- Create: `photography-coach/references/editing-tools.md`
+- Modify: `photography-coach/scripts/extract_image_metadata.py`
 
 - [ ] Replace optional-sounding metadata language with an automatic best-effort attempt.
 - [ ] Continue visual analysis when metadata is inaccessible or absent.

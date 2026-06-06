@@ -1,7 +1,0 @@
-interface:
-  display_name: "Photo Reference Coach"
-  short_description: "Analyze photo references and plan similar shoots"
-  default_prompt: "Use $photo-reference-coach to analyze a reference photo in the user's language, covering composition, light, color, editing, and how to shoot a similar image."
-
-policy:
-  allow_implicit_invocation: true

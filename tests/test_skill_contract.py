@@ -3,13 +3,24 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = (ROOT / "photo-reference-coach" / "SKILL.md").read_text()
+SKILL_DIR = ROOT / "photography-coach"
+SKILL = (SKILL_DIR / "SKILL.md").read_text()
+README = (ROOT / "README.md").read_text()
+OPENAI_YAML = (SKILL_DIR / "agents" / "openai.yaml").read_text()
 SCRIPT = (
-    ROOT / "photo-reference-coach" / "scripts" / "extract_image_metadata.py"
+    SKILL_DIR / "scripts" / "extract_image_metadata.py"
 ).read_text()
 
 
 class SkillContractTests(unittest.TestCase):
+    def test_skill_uses_photography_coach_name(self):
+        self.assertTrue(SKILL_DIR.is_dir())
+        self.assertIn("name: photography-coach", SKILL)
+        self.assertIn("# Photography Coach", SKILL)
+        self.assertIn("$photography-coach", README)
+        self.assertIn('display_name: "Photography Coach"', OPENAI_YAML)
+        self.assertNotIn("$photo-reference-coach", README + OPENAI_YAML)
+
     def test_metadata_is_automatic_and_non_blocking(self):
         self.assertIn(
             "For every attached image, first look for an accessible local file path",

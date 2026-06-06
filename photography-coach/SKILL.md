@@ -1,9 +1,9 @@
 ---
-name: photo-reference-coach
+name: photography-coach
 description: Multilingual photography coach for reference-image analysis, style capture, sample matching, photo diagnosis, EXIF/GPS-aware advice, and concrete shooting/editing instructions for the user's actual app. Use for screenshots, web images, original photos, sample-plus-user-photo comparisons, or pre-shoot planning.
 ---
 
-# Photo Reference Coach
+# Photography Coach
 
 ## Rules
 

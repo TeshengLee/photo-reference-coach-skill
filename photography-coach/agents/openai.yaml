@@ -1,0 +1,7 @@
+interface:
+  display_name: "Photography Coach"
+  short_description: "Analyze photos, guide shoots, and teach editing"
+  default_prompt: "Use $photography-coach to analyze this photo in the user's language, use available EXIF/GPS, and give practical shooting or app-specific editing guidance."
+
+policy:
+  allow_implicit_invocation: true
