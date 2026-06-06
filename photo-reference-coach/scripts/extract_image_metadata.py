@@ -163,7 +163,7 @@ def main():
             if status == "present"
             else "Use only the listed fields; do not infer missing device or capture details."
             if status == "partial"
-            else "Treat as screenshot/export/web image unless the user supplies the original file."
+            else "No embedded capture metadata found; continue with visual analysis."
         ),
     }
     print(json.dumps(output, ensure_ascii=False, indent=2, default=str))

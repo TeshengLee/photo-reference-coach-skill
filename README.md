@@ -151,9 +151,10 @@ $photo-reference-coach 参考图是第一张，我拍的是第二张，告诉我
 - Practical shoot-like-this plans for similar scenes
 - Reference matching against the user's own image
 - Concrete shooting starting values for camera and phone users
-- Lightroom / Camera Raw parameter tables with ranges and adjustment logic
-- Mandatory metadata preflight for local image files
+- Tool-specific parameter ranges and adjustment logic
+- Automatic, non-blocking EXIF/GPS preflight for accessible attachments
 - Separate phone and interchangeable-lens camera workflows
+- App-matched instructions, including Apple Photos and Instagram paths
 
 ## License
 
